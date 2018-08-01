@@ -13,7 +13,9 @@ public class mainone1
 				try
 				{
 					sc = new Scanner(System.in);
-					ss = new ServerSocket(12000);
+					System.out.println("Enter the port number: ");
+					int port = sc.nextInt();
+					ss = new ServerSocket(port);
 					Socket s = ss.accept();
 					DataInputStream dis = new DataInputStream(s.getInputStream());
 					DataOutputStream dos = new DataOutputStream(s.getOutputStream());
@@ -21,11 +23,11 @@ public class mainone1
 					{
 						String str = dis.readUTF();
 						System.out.println(str);
-						System.out.println("Enter Message: ");
+						System.out.println("You: ");
 						x = sc.nextLine();
 						dos.writeUTF(x);
 					}
 				}
-				catch(Exception e) { System.out.println("Not running");}
+				catch(Exception e) { System.out.println("Down");}
 	}
 }
