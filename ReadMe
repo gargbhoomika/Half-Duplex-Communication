@@ -1,0 +1,5 @@
+Its a java based project with which you will be able to do the half duplex communication as a server.
+You can make the other system as client.
+With that you can easily communicate with each other on different systems.
+But its still half duplex.
+You both must be connected to same hotspot.
