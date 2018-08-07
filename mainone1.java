@@ -13,6 +13,8 @@ public class mainone1
 				try
 				{
 					sc = new Scanner(System.in);
+					String iplocal = InetAddress.getLocalHost().getHostAddress(); 
+			System.out.println("Inform client about your IP: "+iplocal);
 					System.out.println("Enter the port number: ");
 					int port = sc.nextInt();
 					ss = new ServerSocket(port);
